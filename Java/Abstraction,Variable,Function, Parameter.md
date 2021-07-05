@@ -1,0 +1,146 @@
+# 추상화 , 변수, 함수, 파라미터
+> ## 추상화 - 추상, 추상화
+
+###  추상
+: 여러가지 사물이나 개념에서 공통되는 특성이나 속성 따위를 추출하여 파악하는 내용
+
+### 추상화 (Abstraction)
+: 구체적인 정보에서 꼭 핵심 적인 내용만 뽑아 내는 것
+####
+:  복잡한 것들을 목적에 맞게 단순화 하는 것 
+ex) 책 제목, 영화 줄거리 , 지도
+
+**목적을 명확히 ! 불필요한 것들은 숨기기 ! 핵심만 드러내기 !**
+
+
+### <u> **# 프로그래밍은 추상화의 연속이다.**</u>
+
+변수 / 함수 / 객체 모두 프로그래밍의 추상화 개념이 숨겨있음
+
+
+
+> ##  변수
+
+반복 입력하는 구체적인 숫자는 오타를 만들어낸다.
+
+숫자에 대한 의미 전달이 어렵다.
+
+즉 , 변수 선언을 추상화 해야 한다.
+
+<u>반복적으로 있는 공통된 숫자에 이름을 부여</u>
+
+
+###  변수(Variable)
+
+
+: 값을 담기 위한 이름이 붙은 상자 
+​
+
+### 변수 선언
+```java
+/let 변수이름 = 값;
+```
+= : 오른쪽에 있는 값을 왼쪽에 할당한다는 의미
+
+-변수를 선언한 다음 변수를 사용
+
+### **꼭 지켜야 하는 룰( 지키지 않으면 오류 )** 
+
+(1) JavaScript 식별자는 '문자(**a**-**z**, **A**-**Z**)',
+ '밑줄(**_**)' 혹은 '달러 기호(**$**)'로 시작.
+두 번째 글자부터는 '숫자(**0**-**9**)'도 가능.
+
+(2) '대문자'와 '소문자'는 구별.
+
+-**myname**과 **myName**은 다른 이름입니다.
+
+(3) '예약어(JavaScript가 찜해놓은 단어)'는 사용하면 안 됨.
+
+예를 들어서 **if**, **for**, **let** 같은 것들이 있음.
+
+
+### 지켜주면 좋은 룰
+
+(1) 의미없는 이름 x
+
+(2) 추상적인 이름 x
+
+(3) 변수명엔 띄어쓰기가 안되므로, camelCase 로 작성
+
+즉, 소문자로 하고 띄어쓰기가 있는 각 단어의 첫 문자를 대문자로 표시
+
+
+###  참고사이트
+
+[Airbnb의 자바스크립트 스타일 가이드](https://github.com/ParkSB/javascript-style-guide)
+
+[Google의 자바스크립트 스타일 가이드](https://google.github.io/styleguide/jsguide.html)
+
+[w3schools.com 스타일 가이드](https://www.w3schools.com/js/js_conventions.asp)
+
+[StandardJS](https://standardjs.com/rules-kokr.html)
+
+[Idiomatic.JS](https://github.com/rwaldron/idiomatic.js/tree/master/translations/ko_KR)
+
+> ##  함수
+
+변수 = 값을 저장
+
+함수 = 명령을 저장
+
+### 함수 선언
+```java
+//함수 선언
+ function 함수이름() { 
+ 명령; 
+ }; 
+ // 함수 호출 
+ 함수이름();
+```
+
+<br>
+
+>## 파라미터
+
+: 함수 내 변수로 사용
+
+
+consloe. log( 값 )
+
+소괄호에 입력하는 값 = Parameter (매개변수)
+```
+// 함수 선언
+
+function 함수이름 ( ⓐ 파라미터 ) {
+
+console.log (ⓑ 파라미터) ;
+
+};
+
+// 함수 호출
+
+함수이름 (값);
+```
+<u>함수 값이 위 파라미터에 전달되는 개념</u>
+
+값 ▶ⓐ ▶ ⓑ
+
+숫자
+```java
+function printSqare(x) {
+	console.log(x*x); //거듭제곱을 출력하는 파라미터
+	};
+	printSqare(2);
+	printSqare(5);
+	printSqare(6);
+```
+문자
+```java
+function welcome(name){
+	console.log('안녕하세요' +name+ '님!');
+	};
+	welcome('강아지');
+	welcome('쿼카');
+	welcome('거북이');
+	welcome('토끼');
+```
