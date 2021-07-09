@@ -1,0 +1,71 @@
+# 여러개의 파라미터, return 
+
+> ## 여러개의 파라미터
+> 
+두 개의 숫자를 입력 받고, 두 숫자의 합을 출력하는 함수
+
+```java
+function printSum (num1 , num2 ) 
+	console.log( num1 + num2 ); 
+}; 
+
+printSum (10 , 5); 
+printSum (123 , 4); 
+printSum(56, 7890);
+```
+
+프로필을 입력 받고 출력하는 함수
+
+```java
+function  introduce(name, birth, nationality, job){
+	console.log('안녕하세요! 반갑습니다.'); 
+	console.log('제이름은 '  + name +  '입니다.'); 
+	console.log('생년월일은 '+ birth +  '이고, '); 
+	console.log('국적은 '  + nationality +  ' 입니다.'); 
+	console.log('직업은 '  + job +  ' 입니다.'); 
+	console.log('잘 부탁드립니다!');
+};
+
+introduce('김소희',  '98.09.03',  '한국',  '대학생');
+```
+
+
+> ## Return
+
+: 함수의 input이 파라미터라면 함수의 output은 return
+####
+: 다시 돌려준다, 반환한다
+
+```java
+// return
+function getTwo() { 
+	return 2; //되돌려줄 값, 반환값 
+}; 
+
+console.log(getTwo());
+console.log(2);
+```
+
+파라미터가 있는 return 값
+```java
+function getTwice(number) {
+	return number *2;
+}; 
+
+console.log(getTwice(5));
+console.log(10); // console.log(getTwice(5))
+```
+
+변수가 있는 return 값
+```java
+function getTwice(number) {
+	 return number *2;
+}; 
+
+//변수설정
+let x =getTwice(5);
+let y = getTwice(2);
+
+console.log(x*y);
+console.log(40); // console.log(x*y)
+```
