@@ -1,0 +1,107 @@
+# 문자열 활용, 불대수, 불린형
+> ## 문자열 활용
+
+역 슬래시를 내부에 있는 따옴표앞에 입력
+```java
+console.log ("I'm Iron man");
+console.log ("He said \"I'm Iron man\"");
+console.log ('He said"I\'m Iron man"');
+console.log ("He said\"I\'m Iron man\"");
+console.log ('He said\"I\'m Iron man"');
+```
+`` 활용
+```java
+console.log(`He said "I'm Iron man"`);
+```
+
+> ## 불 대수
+
+: 일상적인 논리를 수학적으로 표현한 것
+
+
+### 1. 불 대수의 값, 진리값
+
+####  True / False
+
+​
+
+### 2. 불 대수의 연산
+
+####  AND OR NOT
+
+
+명제 : 참과 거짓이 확실한 문장
+
+
+(1) AND 연산 : x와 y가 모두 참 일 때만 x AND y 가 참
+
+(2) OR 연산 : x와 y중 하나라도 참이면 x OR y는 참
+
+(3) NOT 연산 : 참이면 거짓, 거짓이면 참
+<br>
+
+ex) NOT 대한민국의 수도는 서울이다 = 대한민국의 수도는 서울이 아니다
+→ True 이므로 False
+
+ex) NOT 2는 1보다 작다 = 2는 1보다 작지않다
+
+→ False 이므로 True
+
+> ## 불린 (Boolean)
+
+: 참과 거짓을 표현하는 자료형
+
+(1) === : 값이 일치
+
+(2) !== : 값이 불일치
+
+(3) & : and 연산자
+
+(4) || : or 연산자
+
+(5) ! : not 연산자
+
+
+숫자 비교
+```java
+console.log(2 > 1);
+console.log(2 < 1); 
+console.log(3 >= 2); 
+console.log(3 <= 3); 
+console.log(3 === 3); 
+console.log(3 !== 3);
+```
+and 연산
+```java
+console.log(true && true); 
+console.log(true && false); 
+console.log(false && true); 
+console.log(false && false);
+```
+or 연산
+```java
+console.log(true || true); 
+console.log(true || false); 
+console.log(false || true); 
+console.log(false || false);
+```
+not 연산
+```java
+console.log(!true); 
+console.log(!false); 
+console.log(!!true); 
+console.log(!!false);
+```
+
+불린 연산자가 하나만 있을 때는 왼쪽부터 확인
+```java
+console.log( 7!== 7 || 4 < 3);
+```
+
+불린 연산자 활용
+```java
+let x = 3; 
+console.log(x > 4 || !(x > 2)); 
+console.log(3 > 4 || !(3 > 2)); 
+console.log(false || !(true)); 
+console.log(false || false);
