@@ -16,3 +16,20 @@
 - 무한 루프에 빠질 가능성이 있으므로 어떤 노드를 방문했는지 여부를 반드시 검사해야한다.
 - 방문한 노드를 차례로 저장한 후 꺼낼 수 있는 자료인 큐를 사용한다.
 - 선입 선출(FIFO) 원칙으로 탐색한다.
+
+## 구현
+```python
+def bfs(graph, start_node):
+ visit = list() # 방문한 노드 목록을 차례대로 저장할 리스트 
+ queue = list() # 다음으로 방문할 노드의 목록 
+ 
+ queue.append(start_node)
+
+ while queue:  #큐 목록이 끝날 때 까지 loop를 돌려줌 
+  node = queue.pop(0) # 맨앞 노드를 꺼내옴 
+  if node not in visit: #방문리스트가 없다면 
+      visit.append(node) #방문리스트 추가 
+     queue.extend(graph[node]) #자식노드를 큐에 추가 
+
+ return visit
+ ```
