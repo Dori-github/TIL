@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀 합치기</title>
+</head>
+<body>
+<h3>셀 합치기</h3>
+<table border="1">
+	<tr>
+		<td width ="100">1</td>
+		<!-- 같은 행에서 셀을 합칠 때 colspan 사용 -->
+		<td width="100" colspan="2">2,3</td>
+	
+	</tr>
+	<tr>
+		<!-- 다른 행의 셀을 합칠 때 rowspan 사용 -->
+		<td width="100" rowspan="3">4,7</td>
+		<td width="100">5</td>
+		<td width="100">6</td>
+		
+	</tr>
+	<tr>
+		<td width="100">8</td>
+		<td width="100">9</td>
+	</tr>
+	
+	<tr>
+	
+		<td colspan="2">10</td>
+	
+	</tr>
+</table>
+
+</body>
+</html>
